@@ -14,12 +14,13 @@ import java.util.List;
 @Slf4j
 @Controller("/")
 public class MainController {
-
+    private int counter = 0;
     @Autowired
     DataService dataService;
 
     @GetMapping
     public String home(Model model) {
+        counter++;
         List<CovidData> covidDataList = dataService.getCovidDataList();
 
         int totalConfirmed = dataService.getTotalConfirmed();
@@ -37,6 +38,7 @@ public class MainController {
         model.addAttribute("totalNewDeathsCases", newDeath);
         model.addAttribute("totalReportedCasesRecovered", totalRecovered);
         model.addAttribute("totalNewCasesRecovered", newRecovered);
+        log.info("Обработано запросов: {}", counter);
         return "home";
     }
 
@@ -44,6 +46,7 @@ public class MainController {
     public String graph(@PathVariable String countryName, Model model) {
         CovidData countryData = dataService.findByEnglishName(countryName);
         model.addAttribute("countryData", countryData);
+        log.info("Обработано запросов: {}", counter++);
         return "graph";
     }
 }
