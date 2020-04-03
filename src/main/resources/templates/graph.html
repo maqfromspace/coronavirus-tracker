@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>COVID-19</title>
+    <link rel="shortcut icon" type="image/png" th:href="@{/img/favicon.png}"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+<script th:inline="javascript">
+    var pointsRecovered = [];
+    var pointsConfirmed = [];
+    var pointsDeaths = [];
+    var pointsRecoveredByDay = [];
+    var pointsConfirmedByDay = [];
+    var pointsDeathsByDay = [];
+
+    var country = /*[[${countryData.russianName}]]*/ null;
+    var dataRecovered = /*[[${countryData.recovered}]]*/ 'default';
+    var dataConfirmed = /*[[${countryData.confirmed}]]*/ 'default';
+    var dataDeaths = /*[[${countryData.deaths}]]*/ 'default';
+    var dataRecoveredByDay = /*[[${countryData.recoveredByDay}]]*/ 'default';
+    var dataConfirmedByDay = /*[[${countryData.confirmedByDay}]]*/ 'default';
+    var dataDeathsByDay = /*[[${countryData.deathsByDay}]]*/ 'default';
+
+    var startDate = new Date(dataConfirmed[0].x);
+
+    for (let i = 0; i < dataConfirmed.length; i++) {
+        pointsRecovered.push(dataRecovered[i].y);
+        pointsConfirmed.push(dataConfirmed[i].y);
+        pointsDeaths.push(dataDeaths[i].y);
+        pointsRecoveredByDay.push(dataRecoveredByDay[i].y);
+        pointsConfirmedByDay.push(dataConfirmedByDay[i].y);
+        pointsDeathsByDay.push(dataDeathsByDay[i].y);
+    }
+
+    window.onload = function () {
+        Highcharts.setOptions({
+            lang: {
+                resetZoom: "Сбросить увеличение"
+            }
+        });
+        Highcharts.chart('chartContainer', {
+            chart: {
+                zoomType: 'xy'
+            },
+
+            title: {
+                text: country + ". Ситуация с COVID-19."
+            },
+
+            subtitle: {
+                text: 'Данные предоставлены Johns Hopkins University'
+            },
+
+            yAxis: {
+                title: {
+                    text: 'Количество человек'
+                }
+            },
+
+            xAxis: {
+                type: 'datetime',
+                title: {
+                    text: 'Дата'
+                }
+            },
+
+            legend: {
+                layout: 'vertical',
+                align: 'right',
+                verticalAlign: 'middle'
+            },
+
+            plotOptions: {
+                series: {
+                    label: {
+                        connectorAllowed: false
+                    }
+                }
+            },
+            //Графики
+            series: [
+                {
+                    color: "#44be0d",
+                    name: 'Выздоровевшие (За всё время)',
+                    pointStart: Date.UTC(startDate.getFullYear(), startDate.getMonth(), startDate.getDate()),
+                    pointInterval: 24 * 3600 * 1000,
+                    data: pointsRecovered,
+                    marker: {
+                        symbol: 'circle',
+                        enabled: true,
+                        radius: 2
+                    }
+                },
+                {
+                    color: "#ad2029",
+                    name: 'Заболевшие (За всё время)',
+                    pointStart: Date.UTC(startDate.getFullYear(), startDate.getMonth(), startDate.getDate()),
+                    pointInterval: 24 * 3600 * 1000,
+                    data: pointsConfirmed,
+                    marker: {
+                        symbol: 'circle',
+                        enabled: true,
+                        radius: 2
+                    }
+                },
+                {
+                    color: "#000000",
+                    name: 'Погибшие (За всё время)',
+                    pointStart: Date.UTC(startDate.getFullYear(), startDate.getMonth(), startDate.getDate()),
+                    pointInterval: 24 * 3600 * 1000,
+                    data: pointsDeaths,
+                    marker: {
+                        symbol: 'circle',
+                        enabled: true,
+                        radius: 2
+                    }
+                },
+                {
+                    color: "#44be0d",
+                    name: 'Выздоровевшие (За день)',
+                    pointStart: Date.UTC(startDate.getFullYear(), startDate.getMonth(), startDate.getDate()),
+                    pointInterval: 24 * 3600 * 1000,
+                    dashStyle: 'longdash',
+                    data: pointsRecoveredByDay,
+                    marker: {
+                        symbol: 'circle',
+                        enabled: true,
+                        radius: 2
+                    }
+                },
+                {
+                    color: "#ad2029",
+                    name: 'Заболевшие (За день)',
+                    pointStart: Date.UTC(startDate.getFullYear(), startDate.getMonth(), startDate.getDate()),
+                    pointInterval: 24 * 3600 * 1000,
+                    dashStyle: 'longdash',
+                    data: pointsConfirmedByDay,
+                    marker: {
+                        symbol: 'circle',
+                        enabled: true,
+                        radius: 2
+                    }
+                },
+                {
+                    color: "#000000",
+                    name: 'Погибшие (За день)',
+                    pointStart: Date.UTC(startDate.getFullYear(), startDate.getMonth(), startDate.getDate()),
+                    pointInterval: 24 * 3600 * 1000,
+                    dashStyle: 'longdash',
+                    data: pointsDeathsByDay,
+                    marker: {
+                        symbol: 'circle',
+                        enabled: true,
+                        radius: 2
+                    }
+                }
+
+            ],
+
+            responsive: {
+                rules: [{
+                    condition: {
+                        maxWidth: 700
+                    },
+                    chartOptions: {
+                        legend: {
+                            layout: 'horizontal',
+                            align: 'center'
+                        }
+                    }
+                }]
+            }
+        });
+    }
+</script>
+<nav class="navbar navbar-expand-md navbar-light  bg-light">
+    <p class="navbar-brand" style="font-size: 200%">COVID-19</p>
+    <div>
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="../" style="font-size: 200%">Статистика</a>
+            </li>
+            <li class="nav-item disabled active">
+                <a class="nav-link" href="#" style="font-size: 200%" ><span th:text="${countryData.russianName}"></span></a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<div class="container">
+    <div id="chartContainer" style="height: 100%; width: 100%;"></div>
+</div>
+<!-- Футер TODO придумать что- то поинтереснее-->
+<hr class="my-4">
+<footer>
+    <div class="footer-copyright text-center py-3">
+        <a href="https://github.com/maqfromspace/coronavirus-tracker"><img th:src="@{/img/GitHub_Logo.png}" height="35" width="100" alt="Github"></a>
+    </div>
+</footer>
+</body>
+</html>

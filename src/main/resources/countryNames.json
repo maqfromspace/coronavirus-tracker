@@ -1,0 +1,706 @@
+[
+  {
+    "EN": "Afghanistan",
+    "RU": "Афганистан"
+  },
+  {
+    "EN": "Albania",
+    "RU": "Албания"
+  },
+  {
+    "EN": "Algeria",
+    "RU": "Алжир"
+  },
+  {
+    "EN": "Andorra",
+    "RU": "Андорра"
+  },
+  {
+    "EN": "Angola",
+    "RU": "Ангола"
+  },
+  {
+    "EN": "Antigua and Barbuda",
+    "RU": "Антига и Барбуда"
+  },
+  {
+    "EN": "Argentina",
+    "RU": "Аргентина"
+  },
+  {
+    "EN": "Armenia",
+    "RU": "Армения"
+  },
+  {
+    "EN": "Australia",
+    "RU": "Австралия"
+  },
+  {
+    "EN": "Austria",
+    "RU": "Австрия"
+  },
+  {
+    "EN": "Azerbaijan",
+    "RU": "Азербайджан"
+  },
+  {
+    "EN": "Bahamas",
+    "RU": "Багамские острова"
+  },
+  {
+    "EN": "Bahrain",
+    "RU": "Бахрейн"
+  },
+  {
+    "EN": "Bangladesh",
+    "RU": "Бангладеш"
+  },
+  {
+    "EN": "Barbados",
+    "RU": "Барбадос"
+  },
+  {
+    "EN": "Belarus",
+    "RU": "Беларусь"
+  },
+  {
+    "EN": "Belgium",
+    "RU": "Бельгия"
+  },
+  {
+    "EN": "Belize",
+    "RU": "Белиз"
+  },
+  {
+    "EN": "Benin",
+    "RU": "Бенин"
+  },
+  {
+    "EN": "Bhutan",
+    "RU": "Бутан"
+  },
+  {
+    "EN": "Bolivia",
+    "RU": "Боливия"
+  },
+  {
+    "EN": "Bosnia and Herzegovina",
+    "RU": "Босния и Герцеговина"
+  },
+  {
+    "EN": "Brazil",
+    "RU": "Бразилия"
+  },
+  {
+    "EN": "Brunei",
+    "RU": "Бруней"
+  },
+  {
+    "EN": "Bulgaria",
+    "RU": "Болгария"
+  },
+  {
+    "EN": "Burkina Faso",
+    "RU": "Буркина-Фасо"
+  },
+  {
+    "EN": "Cabo Verde",
+    "RU": "Кабо-Верде"
+  },
+  {
+    "EN": "Cambodia",
+    "RU": "Камбоджа"
+  },
+  {
+    "EN": "Cameroon",
+    "RU": "Камерун"
+  },
+  {
+    "EN": "Canada",
+    "RU": "Канада"
+  },
+  {
+    "EN": "Central African Republic",
+    "RU": "Центральноафриканская Республика"
+  },
+  {
+    "EN": "Chad",
+    "RU": "Чад"
+  },
+  {
+    "EN": "Chile",
+    "RU": "Чили"
+  },
+  {
+    "EN": "China",
+    "RU": "Китай"
+  },
+  {
+    "EN": "Colombia",
+    "RU": "Колумбия"
+  },
+  {
+    "EN": "Congo (Brazzaville)",
+    "RU": "Конго (Браззавиль)"
+  },
+  {
+    "EN": "Congo (Kinshasa)",
+    "RU": "Конго (Киншаса)"
+  },
+  {
+    "EN": "Costa Rica",
+    "RU": "Коста-Рика"
+  },
+  {
+    "EN": "Cote d'Ivoire",
+    "RU": "Кот-д'Ивуар"
+  },
+  {
+    "EN": "Croatia",
+    "RU": "Хорватия"
+  },
+  {
+    "EN": "Cuba",
+    "RU": "Куба"
+  },
+  {
+    "EN": "Cyprus",
+    "RU": "Кипр"
+  },
+  {
+    "EN": "Czechia",
+    "RU": "Чехия"
+  },
+  {
+    "EN": "Denmark",
+    "RU": "Дания"
+  },
+  {
+    "EN": "Diamond Princess",
+    "RU": "Diamond Princess"
+  },
+  {
+    "EN": "Djibouti",
+    "RU": "Джибути"
+  },
+  {
+    "EN": "Dominica",
+    "RU": "Доминика"
+  },
+  {
+    "EN": "Dominican Republic",
+    "RU": "Доминиканская Республика"
+  },
+  {
+    "EN": "Ecuador",
+    "RU": "Эквадор"
+  },
+  {
+    "EN": "Egypt",
+    "RU": "Египет"
+  },
+  {
+    "EN": "El Salvador",
+    "RU": "Сальвадор"
+  },
+  {
+    "EN": "Equatorial Guinea",
+    "RU": "Экваториальная Гвинея"
+  },
+  {
+    "EN": "Eritrea",
+    "RU": "Эритрея"
+  },
+  {
+    "EN": "Estonia",
+    "RU": "Эстония"
+  },
+  {
+    "EN": "Eswatini",
+    "RU": "Эсватини"
+  },
+  {
+    "EN": "Ethiopia",
+    "RU": "Эфиопия"
+  },
+  {
+    "EN": "Fiji",
+    "RU": "Фиджи"
+  },
+  {
+    "EN": "Finland",
+    "RU": "Финляндия"
+  },
+  {
+    "EN": "France",
+    "RU": "Франция"
+  },
+  {
+    "EN": "Gabon",
+    "RU": "Габон"
+  },
+  {
+    "EN": "Gambia",
+    "RU": "Гамбия"
+  },
+  {
+    "EN": "Georgia",
+    "RU": "Грузия"
+  },
+  {
+    "EN": "Germany",
+    "RU": "Германия"
+  },
+  {
+    "EN": "Ghana",
+    "RU": "Гана"
+  },
+  {
+    "EN": "Greece",
+    "RU": "Греция"
+  },
+  {
+    "EN": "Grenada",
+    "RU": "Гренада"
+  },
+  {
+    "EN": "Guatemala",
+    "RU": "Гватемала"
+  },
+  {
+    "EN": "Guinea",
+    "RU": "Гвинея"
+  },
+  {
+    "EN": "Guinea-Bissau",
+    "RU": "Гвинея-Бисау"
+  },
+  {
+    "EN": "Guyana",
+    "RU": "Гайана"
+  },
+  {
+    "EN": "Haiti",
+    "RU": "Гаити"
+  },
+  {
+    "EN": "Holy See",
+    "RU": "Святой Престол"
+  },
+  {
+    "EN": "Honduras",
+    "RU": "Гондурас"
+  },
+  {
+    "EN": "Hungary",
+    "RU": "Венгрия"
+  },
+  {
+    "EN": "Iceland",
+    "RU": "Исландия"
+  },
+  {
+    "EN": "India",
+    "RU": "Индия"
+  },
+  {
+    "EN": "Indonesia",
+    "RU": "Индонезия"
+  },
+  {
+    "EN": "Iran",
+    "RU": "Иран"
+  },
+  {
+    "EN": "Iraq",
+    "RU": "Ирак"
+  },
+  {
+    "EN": "Ireland",
+    "RU": "Ирландия"
+  },
+  {
+    "EN": "Israel",
+    "RU": "Израиль"
+  },
+  {
+    "EN": "Italy",
+    "RU": "Италия"
+  },
+  {
+    "EN": "Jamaica",
+    "RU": "Ямайка"
+  },
+  {
+    "EN": "Japan",
+    "RU": "Япония"
+  },
+  {
+    "EN": "Jordan",
+    "RU": "Иордания"
+  },
+  {
+    "EN": "Kazakhstan",
+    "RU": "Казахстан"
+  },
+  {
+    "EN": "Kenya",
+    "RU": "Кения"
+  },
+  {
+    "EN": "Korea",
+    "RU": "Корея"
+  },
+  {
+    "EN": "Korea, South",
+    "RU": "Южная корея"
+  },
+  {
+    "EN": "Kosovo",
+    "RU": "Косово"
+  },
+  {
+    "EN": "Kuwait",
+    "RU": "Кувейт"
+  },
+  {
+    "EN": "Kyrgyzstan",
+    "RU": "Кыргызстан"
+  },
+  {
+    "EN": "Laos",
+    "RU": "Лаос"
+  },
+  {
+    "EN": "Latvia",
+    "RU": "Латвия"
+  },
+  {
+    "EN": "Lebanon",
+    "RU": "Ливан"
+  },
+  {
+    "EN": "Liberia",
+    "RU": "Либерия"
+  },
+  {
+    "EN": "Libya",
+    "RU": "Ливия"
+  },
+  {
+    "EN": "Liechtenstein",
+    "RU": "Лихтенштейн"
+  },
+  {
+    "EN": "Lithuania",
+    "RU": "Литва"
+  },
+  {
+    "EN": "Luxembourg",
+    "RU": "Люксембург Ург"
+  },
+  {
+    "EN": "Madagascar",
+    "RU": "Мадагаскар"
+  },
+  {
+    "EN": "Malaysia",
+    "RU": "Малайзия"
+  },
+  {
+    "EN": "Maldives",
+    "RU": "Мальдивы"
+  },
+  {
+    "EN": "Mali",
+    "RU": "Мали"
+  },
+  {
+    "EN": "Malta",
+    "RU": "Мальта"
+  },
+  {
+    "EN": "Mauritania",
+    "RU": "Мавритания"
+  },
+  {
+    "EN": "Mauritius",
+    "RU": "Маврикий"
+  },
+  {
+    "EN": "Mexico",
+    "RU": "Мексика"
+  },
+  {
+    "EN": "Moldova",
+    "RU": "Молдова"
+  },
+  {
+    "EN": "Monaco",
+    "RU": "Монако"
+  },
+  {
+    "EN": "Mongolia",
+    "RU": "Монголия"
+  },
+  {
+    "EN": "Montenegro",
+    "RU": "Черногория"
+  },
+  {
+    "EN": "Morocco",
+    "RU": "Марокко"
+  },
+  {
+    "EN": "Mozambique",
+    "RU": "Мозамбик"
+  },
+  {
+    "EN": "Namibia",
+    "RU": "Намибия"
+  },
+  {
+    "EN": "Nepal",
+    "RU": "Непал"
+  },
+  {
+    "EN": "Netherlands",
+    "RU": "Нидерланды"
+  },
+  {
+    "EN": "New Zealand",
+    "RU": "Новая Зеландия"
+  },
+  {
+    "EN": "Nicaragua",
+    "RU": "Никарагуа"
+  },
+  {
+    "EN": "Niger",
+    "RU": "Нигер"
+  },
+  {
+    "EN": "Nigeria",
+    "RU": "Нигерия"
+  },
+  {
+    "EN": "North Macedonia",
+    "RU": "Северная Македония"
+  },
+  {
+    "EN": "Norway",
+    "RU": "Норвегия"
+  },
+  {
+    "EN": "Oman",
+    "RU": "Оман"
+  },
+  {
+    "EN": "Pakistan",
+    "RU": "Пакистан"
+  },
+  {
+    "EN": "Panama",
+    "RU": "Панама"
+  },
+  {
+    "EN": "Papua New Guinea",
+    "RU": "Папуа-Новая Гвинея"
+  },
+  {
+    "EN": "Paraguay",
+    "RU": "Парагвай"
+  },
+  {
+    "EN": "Peru",
+    "RU": "Перу"
+  },
+  {
+    "EN": "Philippines",
+    "RU": "Филиппины"
+  },
+  {
+    "EN": "Poland",
+    "RU": "Польша"
+  },
+  {
+    "EN": "Portugal",
+    "RU": "Португалия"
+  },
+  {
+    "EN": "Qatar",
+    "RU": "Катар"
+  },
+  {
+    "EN": "Romania",
+    "RU": "Румыния"
+  },
+  {
+    "EN": "Russia",
+    "RU": "Россия"
+  },
+  {
+    "EN": "Rwanda",
+    "RU": "Руанда"
+  },
+  {
+    "EN": "Saint Kitts and Nevis",
+    "RU": "Сент-Китс и Невис"
+  },
+  {
+    "EN": "Saint Lucia",
+    "RU": "Сент-Люсия"
+  },
+  {
+    "EN": "Saint Vincent and the Grenadines",
+    "RU": "Сент-Винсент и Гренадины"
+  },
+  {
+    "EN": "San Marino",
+    "RU": "Сан-Марино"
+  },
+  {
+    "EN": "Saudi Arabia",
+    "RU": "Саудовская Аравия"
+  },
+  {
+    "EN": "Senegal",
+    "RU": "Сенегал"
+  },
+  {
+    "EN": "Serbia",
+    "RU": "Сербия"
+  },
+  {
+    "EN": "Seychelles",
+    "RU": "Сейшельские Острова"
+  },
+  {
+    "EN": "Singapore",
+    "RU": "Сингапур"
+  },
+  {
+    "EN": "Slovakia",
+    "RU": "Словакия"
+  },
+  {
+    "EN": "Slovenia",
+    "RU": "Словения"
+  },
+  {
+    "EN": "Somalia",
+    "RU": "Сомали"
+  },
+  {
+    "EN": "South Africa",
+    "RU": "Южная Африка"
+  },
+  {
+    "EN": "Spain",
+    "RU": "Испания"
+  },
+  {
+    "EN": "Sri Lanka",
+    "RU": "Шри-Ланка"
+  },
+  {
+    "EN": "Sudan",
+    "RU": "Судан"
+  },
+  {
+    "EN": "Suriname",
+    "RU": "Суринам"
+  },
+  {
+    "EN": "Sweden",
+    "RU": "Швеция"
+  },
+  {
+    "EN": "Switzerland",
+    "RU": "Швейцария"
+  },
+  {
+    "EN": "Syria",
+    "RU": "Сирия"
+  },
+  {
+    "EN": "Taiwan*",
+    "RU": "Тайвань"
+  },
+  {
+    "EN": "Tanzania",
+    "RU": "Танзания"
+  },
+  {
+    "EN": "Thailand",
+    "RU": "Таиланд"
+  },
+  {
+    "EN": "Timor-Leste",
+    "RU": "Тимор-Лешти"
+  },
+  {
+    "EN": "Togo",
+    "RU": "Того"
+  },
+  {
+    "EN": "Trinidad and Tobago",
+    "RU": "Тринидад и Тобаго"
+  },
+  {
+    "EN": "Tunisia",
+    "RU": "Тунис"
+  },
+  {
+    "EN": "Turkey",
+    "RU": "Турция"
+  },
+  {
+    "EN": "US",
+    "RU": "США"
+  },
+  {
+    "EN": "Uganda",
+    "RU": "Уганда"
+  },
+  {
+    "EN": "Ukraine",
+    "RU": "Украина"
+  },
+  {
+    "EN": "United Arab Emirates",
+    "RU": "Объединенные Арабские Эмираты"
+  },
+  {
+    "EN": "United Kingdom",
+    "RU": "Великобритания"
+  },
+  {
+    "EN": "Uruguay",
+    "RU": "Уругвай"
+  },
+  {
+    "EN": "Uzbekistan",
+    "RU": "Узбекистан"
+  },
+  {
+    "EN": "Venezuela",
+    "RU": "Венесуэла"
+  },
+  {
+    "EN": "Vietnam",
+    "RU": "Вьетнам"
+  },
+  {
+    "EN": "West Bank and Gaza",
+    "RU": "Западный берег и сектор Газа"
+  },
+  {
+    "EN": "Zambia",
+    "RU": "Замбия"
+  },
+  {
+    "EN": "Zimbabwe",
+    "RU": "Зимбабве"
+  }
+]

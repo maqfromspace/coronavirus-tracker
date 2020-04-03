@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8"/>
+    <title>COVID-19</title>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="shortcut icon" type="image/png" th:href="@{/img/favicon.png}"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.12/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
+    <script src="/js/datatable.js"></script>
+</head>
+
+<body>
+<nav class="navbar navbar-expand-md navbar-light  bg-light">
+    <p class="navbar-brand disabled" style="font-size: 200%">COVID-19</p>
+    <div>
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active disabled">
+                <a class="nav-link" href="../" style="font-size: 200%">Статистика</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container">
+    <hr class="my-4">
+    <div class="jumbotron">
+        <h2 class="display-4" style="text-align: center">Общая статистика</h2>
+        <div class="row">
+            <div class="col-sm jumbotron">
+                <h3 class="display-4">Выздоровело</h3>
+                <p>
+                    <span>За день:</span>
+                    <span class="health" th:text="${totalNewCasesRecovered}"></span>
+                </p>
+                <p>
+                    <span>Всего:</span>
+                    <span class="health" th:text="${totalReportedCasesRecovered}"></span>
+                </p>
+            </div>
+            <div class="col-sm jumbotron">
+                <h3 class="display-4">Заражено</h3>
+                <p>
+                    <span>За день:</span>
+                    <span class="confirmed" th:text="${totalNewCases}"></span>
+                </p>
+                <p>
+                    <span>Всего:</span>
+                    <span class="confirmed" th:text="${totalReportedCases}"></span>
+                </p>
+            </div>
+            <div class="col-sm jumbotron">
+                <h3 class="display-4">Умерло</h3>
+                <p>
+                    <span>За день:</span>
+                    <span class="deaths" th:text="${totalNewDeathsCases}"></span>
+                </p>
+                <p>
+                    <span>Всего:</span>
+                    <span class="deaths" th:text="${totalDeathsReportedCases}"></span>
+                </p>
+            </div>
+        </div>
+    </div>
+    <hr class="my-4">
+    <table id="myTable" class="display table">
+        <!-- Header Table -->
+        <thead>
+        <tr>
+            <th class="no-sort"></th>
+            <th>Страна</th>
+            <th>Выздоровело за всё время</th>
+            <th>Выздоровело за последний день</th>
+            <th>Заражено за всё время</th>
+            <th>Заражено за последний день</th>
+            <th>Умерло за всё время</th>
+            <th>Умерло за последний день</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="locationData : ${allData}">
+            <td class="no-sort"><a th:href="@{'/graph/' + ${locationData.englishName}}"><img th:src="@{/img/graph.png}"
+                                                                                             alt="link"/></a></td>
+            <td th:text="${locationData.russianName}"></td>
+            <td th:text="${locationData.latestTotalRecovered}">0</td>
+            <td th:text="${locationData.diffFromPrevDayRecovered}">0</td>
+            <td th:text="${locationData.latestTotalCases}">0</td>
+            <td th:text="${locationData.diffFromPrevDay}">0</td>
+            <td th:text="${locationData.latestTotalDeaths}">0</td>
+            <td th:text="${locationData.diffDeathsFromPrevDay}">0</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+<hr class="my-4">
+<footer>
+    <div class="footer-copyright text-center py-3">
+        <a href="https://github.com/maqfromspace/coronavirus-tracker"><img th:src="@{/img/GitHub_Logo.png}" height="35" width="100" alt="Github"></a>
+    </div>
+</footer>
+</html>
